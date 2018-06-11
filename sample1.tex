@@ -39,6 +39,7 @@ Director:  Ab Institute, 123 Hillside Ave, New York, NY 11234, USA. Phone: 718-5
 
 	
 \begin{document}
+\input{sample1-concordance}
 
 \maketitle
 
@@ -157,24 +158,33 @@ We are regressing $y$ on $x$ to show that faster a car is driving
 longer is the distance before it comes to a full stop.
 
 Our first R input code is:
+
+\begin{Schunk}
 \begin{Sinput}
-rbind(head(cars,3),tail(cars,3)) # first \& last 3 row of data
-nrow(cars)
+> rbind(head(cars,3),tail(cars,3)) # first \& last 3 row of data
 \end{Sinput}
-We have combined the first and last three rows of data for brevity in
-the following R output.
 \begin{Soutput}
-> rbind(head(cars,3),tail(cars,3)) 
-     speed dist
+   speed dist
 1      4    2
 2      4   10
 3      7    4
 48    24   93
 49    24  120
 50    25   85
+\end{Soutput}
+\end{Schunk}
+
+We have combined the first and last three rows of data for brevity in
+the following R output.
+
+\begin{Schunk}
+\begin{Sinput}
 > nrow(cars)
+\end{Sinput}
+\begin{Soutput}
 [1] 50
 \end{Soutput}
+\end{Schunk}
 
 The R output above shows that `cars' data in R has $p=1, T=50$.
 Instead of reporting the  (50$\times 2$) $X$ matrix,
@@ -397,7 +407,7 @@ xtable(ou1)
 						\end{tabular}
 						\label{table:GenCorr}
 					\end{subtable}
-\begin{(subtable}
+          \begin{(subtable}
 						\subfloat{3f. Generalized Correlation Results}{
 							\begin{tabular}{c c c c c}
 								\hline
@@ -412,5 +422,3 @@ xtable(ou1)
 						\end{subtable}
 						\label{table:GenCorr}
 					\end{table}
-					
-				
