@@ -193,34 +193,37 @@ brevity demands that we report the first three and last three rows of data.
 The simplest linear regression for cars data using R
 is implemented by `lm' function creating an R object called `reg'
 in the R code below.
-\begin{Sinput}
-library(stargazer)	
-attach(cars) #to access columns by name
-reg=lm(dist~speed) #standard R method for regression
-stargazer(reg)
-\end{Sinput}
 
 The output of the above code is in a form suitable to produce
 the following (Latex) Table \ref{tab.reg} where standard errors
 of regression coefficients are in parentheses under the coefficient
 values.
-% Date and time: Tue, May 01, 2018 - 12:20:14 PM
+
+\begin{Schunk}
+\begin{Sinput}
+> library(stargazer)	
+> attach(cars) #to access columns by name
+> reg=lm(dist~speed) #standard R method for regression
+> stargazer(reg, label="tab.reg")
+\end{Sinput}
+% Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Tue, Jun 12, 2018 - 11:24:17
 \begin{table}[!htbp] \centering 
-\caption{Regression of stopping distance on speed by standard R method} 
-\label{tab.reg} 
+  \caption{} 
+  \label{tab.reg} 
 \begin{tabular}{@{\extracolsep{5pt}}lc} 
-	\\[-1.8ex]\hline 
-	\hline \\[-1.8ex] 
-& \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
 \cline{2-2} 
 \\[-1.8ex] & dist \\ 
 \hline \\[-1.8ex] 
-speed & 3.932$^{***}$ \\ 
-& (0.416) \\ 
-& \\ 
-Constant & $-$17.579$^{**}$ \\ 
-& (6.758) \\ 
-& \\ 
+ speed & 3.932$^{***}$ \\ 
+  & (0.416) \\ 
+  & \\ 
+ Constant & $-$17.579$^{**}$ \\ 
+  & (6.758) \\ 
+  & \\ 
 \hline \\[-1.8ex] 
 Observations & 50 \\ 
 R$^{2}$ & 0.651 \\ 
@@ -231,7 +234,7 @@ F Statistic & 89.567$^{***}$ (df = 1; 48) \\
 \hline \\[-1.8ex] 
 \textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
-\end{table} 
+\end{table} \end{Schunk}
 
 \section{Summary and Final Remarks}
 This chapter has attempted to solve an important econometric
