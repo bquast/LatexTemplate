@@ -1,0 +1,33 @@
+\begin{thebibliography}{5}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{{R Development Core Team}(2018)}]{R18}
+{R Development Core Team}, 2018. R: A language and environment for statistical
+  computing. R Foundation for Statistical Computing, Vienna, Austria, {ISBN}
+  3-900051-07-0.
+\newline\urlprefix\url{http://www.R-project.org}
+
+\bibitem[{Rao(1947)}]{Rao47}
+Rao, C.~R., 1947. Note on a problem of ragnar frisch. Econometrica 15(3),
+  245--249.
+
+\bibitem[{Rao(1949)}]{Rao49}
+Rao, C.~R., 1949. A correction to ``note on a problem of ragnar frisch''.
+  Econometrica 17(3/4), 212.
+
+\bibitem[{Vinod(1993)}]{Vinodb93}
+Vinod, H.~D., 1993. Bootstrap methods: Applications in econometrics. In:
+  Maddala, G.~S., Rao, C.~R., Vinod, H.~D. (Eds.), Handbook of Statistics:
+  Econometrics. Vol.~11. North Holland, Elsevier, New York, Ch.~23, pp.
+  629--661.
+
+\bibitem[{Vinod(2007)}]{Vinodu07}
+Vinod, H.~D., 2007. Correcting for heteroscedasticity for numerical values
+  domain. Tech. rep., Economics Department, Fordham University, presented at:
+  Greater New York Metropolitan Area Econometrics Colloquium, University of
+  Pennsylvania, 1 December 2007.
+
+\end{thebibliography}
