@@ -166,7 +166,7 @@ rbind(head(cars,3),tail(cars,3)) # first \& last 3 row of data
 We have combined the first and last three rows of data for brevity in
 the following R output.
 
-<<cars>>=
+<<carsrows>>=
 nrow(cars)
 @
 
